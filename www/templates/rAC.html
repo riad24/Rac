@@ -1,0 +1,83 @@
+<ion-view  title="বাংলাদেশ রেফ্রিজারেশন ভাই ব্রাদার্স"  id="rac" style=" background-color:#0E2240;">
+  <ion-nav-buttons side="right">
+    <!--<button class="button button-energized icon ion-android-add-circle" ng-click="showPopup()"></button>-->
+    <!--<button class="button button-dark icon ion-android-share" ng-click="OtherShare()"> Share</button>-->
+
+  </ion-nav-buttons>
+  <ion-tabs class="tabs-stable tabs-icon-top" id="tabsController-tabs1">
+    <div class = "button-bar">
+      <a class = "button button-positive">AddQuestion</a>
+      <a class = "button button-energized">RAC video</a>
+      <a class = "button button-calm"> Share</a>
+    </div>
+  </ion-tabs>
+  <!--<div class="float-button">-->
+	<!--<span class="height-fix">-->
+	  	<!--<a class="content">-->
+	    <!--<i class="icon ion-plus"></i>-->
+	   	<!--</a>-->
+	  <!--</span>-->
+  <!--</div>-->
+  <ion-content padding="true" class="has-header">
+
+
+    <div style="margin-top: 5px;" ><marquee><p style="color: white; font-size: 20px;margin-top: 10px;" >{{getmessage}}</p></marquee></div>
+
+    <div class="a"  align="center" style=" padding-bottom: 10%; margin-top: 10%;margin-right: 40px; ">
+    <a ui-sref="rACBOOK" ><img src="img/boi.png" style="width: auto;height:70px; border-radius: 50%" /></a>
+    <p class="fff" style="color: white;font-family: 'Arial Black';font-size: 15px;">রেফ্রিজারেশন বই</p>
+    </div>
+
+    <div id="outer" style="padding-bottom: 110px;width: 100%">
+    <div class="c" style="float: left;width: 30%">
+    <a ui-sref="answer()"><img src="img/question_mark1.png" style="width: auto;height:70px; border-radius: 50%"></a>
+    <p align="  "style="color: white;font-family: 'Arial Black';font-size: 15px;">প্রশ্ন/উত্তর</p>
+    </div>
+    <div class="v" style="float:left; width: 30%;margin-right: 15px;">
+      <div align="center">
+    <a href="https://www.facebook.com/groups/327422517693378/"><img src="img/fb.png" style="width: auto;height:70px; border-radius: 50%;"></a>
+    <p align="center" style="color: white;font-family: 'Arial Black';font-size: 15px;">আমাদের গ্রুপ</p>
+      </div>
+    </div>
+    <div style="float:right; width: 35%">
+      <div style="float:right;">
+    <a ui-sref="ractuls"><img src="img/mb.png" style="width: auto;height:70px; border-radius: 50%;margin-left: 15px"></a>
+    <p align="" style="color: white;font-family: 'Arial Black';font-size: 15px; ">গুরুত্বপূর্ণ জিনিস</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="j"  align="center" style=" margin-top:10%;margin-right: 40px">
+    <a ui-sref="job()" ><img src="img/job.png" style="width: auto;height:70px; border-radius: 50%" /></a>
+    <p class="fff" style="color: white;font-family: 'Arial Black';font-size: 15px;">রেফ্রিজারেশন চাকরী</p>
+    </div>
+    <!--<div style="margin-top: 10%;  ">-->
+    <!--<div class="a"  align="center" style=" padding-bottom: 10%">-->
+      <!--<a ui-sref="rACBOOK" ><img src="img/boi.png" style="width: auto;height:70px; border-radius: 50%" /></a>-->
+      <!--<p class="fff" style="color: white;font-family: 'Arial Black';font-size: 15px;">রেফ্রিজারেশন বই</p>-->
+    <!--</div>-->
+      <!--<div id="outer" style="width:100%; padding-bottom: 20%">-->
+      <!--<div style="float: left;width: 30%"  align="center">-->
+        <!--<div style="float: left">-->
+        <!--<a ui-sref="answer()"><img src="img/question_mark.png" style="width: auto;height:70px; border-radius: 50%"></a>-->
+        <!--<p align="center"style="color: white;font-family: 'Arial Black';font-size: 15px;">প্রশ্ন/উত্তর</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="v" style="float: left; width: 33%"  align="center">-->
+        <!--<a href="https://www.facebook.com/groups/327422517693378/"><img src="img/fb.png" style="width: auto;height:70px; border-radius: 50%"></a>-->
+        <!--<p align="center" style="color: white;font-family: 'Arial Black';font-size: 15px;">আমাদের গ্রুপ</p>-->
+      <!--</div>-->
+    <!--<div style="float:right;width: 34%"  >-->
+      <!--<div style="float: right">-->
+      <!--<a ui-sref="login"><img src="img/mb.png" style="width: auto;height:70px; border-radius: 50%"></a>-->
+      <!--<p align="center" style="color: white;font-family: 'Arial Black';font-size: 15px;">গুরুত্বপূর্ণ জিনিস</p></div>-->
+    <!--</div>-->
+        <!--</div>-->
+      <!--<div class="j"  align="center" style=" margin-top:10%">-->
+        <!--<a ui-sref="job()" ><img src="img/job.png" style="width: auto;height:70px; border-radius: 50%" /></a>-->
+        <!--<p class="fff" style="color: white;font-family: 'Arial Black';font-size: 15px;">রেফ্রিজারেশন চাকরী</p>-->
+      <!--</div>-->
+    <!--</div>-->
+  </ion-content>
+
+</ion-view>

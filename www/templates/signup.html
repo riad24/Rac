@@ -1,0 +1,39 @@
+<ion-view title="বাংলাদেশ রেফ্রিজারেশন ভাই ব্রাদার্স" id="page5" style=" background-color:#0E2240;">
+  <ion-content padding="true" class="has-header">
+    <div align="center" style="margin-bottom:10px">
+      <!--<img src="../img/icon.png" style="width:90%; height: 250px;;" />-->
+      <img src="img/icon.png" style="width:auto; height:300px;" />
+    </div>
+    <form id="login-form1" class="list">
+      <ion-list id="login-list2">
+        <label class="item item-input" id="singn-input1">
+          <span class="input-label">সদস্যের নামঃ</span>
+          <input type="text" placeholder="সদস্যের নাম" name="name" ng-model="data.name">
+        </label>
+        <label class="item item-input" id="singn-input2">
+          <span class="input-label">কোম্পানির নামঃ</span>
+          <input type="text" placeholder="কোম্পানির নাম" name="company" ng-model="data.company">
+        </label>
+        <label class = "item item-input item-select">
+          <div class = "input-label">পদ নামঃ</div>
+          <select name="posation" ng-model="data.posation">
+            <option>Teacher</option>
+            <option>Technician</option>
+            <option>Engineer</option>
+            <option>student</option>
+          </select>
+        </label>
+        <label class="item item-input" id="singn-input3">
+          <span class="input-label">ফোন নম্বর</span>
+          <input type="number" placeholder="ফোন নম্বর" name="phone" ng-model="data.phone">
+        </label>
+        <label class="item item-input" id="singn-input5">
+          <span class="input-label">লোকেশন</span>
+          <input type="text" placeholder="লোকেশন" name="location" ng-model="data.location">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 20px;"></div>
+      <button id="singn-button15" class="button button-balanced button-block"   ng-click="reagInfo(data)">রেজিস্ট্রিকরণ</button>
+    </form>
+  </ion-content>
+</ion-view>

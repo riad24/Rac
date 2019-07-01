@@ -1,0 +1,27 @@
+<ion-view title="দোকান তথ্য যোগ করুন" id="page8">
+  <ion-content padding="true" class="has-header">
+    <form id="login-form1" class="list">
+      <ion-list id="login-list2">
+        <label class="item item-input" id="singn-input1">
+          <span class="input-label">দোকান নাম:</span>
+          <input type="text" placeholder="Shop Name" name="ShopName" ng-model="data.ShopName">
+        </label>
+        <label class="item item-input" id="singn-input2">
+          <span class="input-label">দোকান নম্বর</span>
+          <input type="text" placeholder="Shop Number" name="ShopNumber" ng-model="data.ShopNumber">
+        </label>
+        <label class="item item-input" id="singn-input3">
+          <span class="input-label">দোকান লোকেশন</span>
+          <input type="text" placeholder="Shop Location" name="ShopLocation" ng-model="data.ShopLocation">
+        </label>
+        <label class="item item-input" id="singn-input4">
+          <span class="input-label">ফোন নম্বর</span>
+          <input type="number" placeholder="Phone Number" name="phone" ng-model="data.phone">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <button  id="singn-button15" class="button button-balanced button-block" ng-click="AddShop(data)">Shop Add</button>
+    </form>
+  </ion-content>
+</ion-view>
+

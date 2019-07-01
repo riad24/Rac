@@ -1,0 +1,51 @@
+{
+  "name": "RACBD",
+  "version": "0.0.1",
+  "description": "An Ionic project",
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "@ionic/pro": "1.0.20",
+    "cordova-android": "~7.0.0",
+    "cordova-connectivity-monitor": "^1.2.2",
+    "cordova-plugin-admobpro": "^2.31.5",
+    "cordova-plugin-app-event": "^1.2.1",
+    "cordova-plugin-appminimize": "^1.0.0",
+    "cordova-plugin-background-mode": "^0.7.2",
+    "cordova-plugin-badge": "^0.8.7",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-extension": "^1.5.4",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^1.2.1",
+    "cordova-plugin-local-notification": "^0.9.0-beta.2",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "ionic-plugin-keyboard": "^2.2.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+      },
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-admobpro": {},
+      "cordova-plugin-appminimize": {},
+      "cordova-plugin-local-notification": {},
+      "cordova-plugin-background-mode": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<ion-view title="দোকানের তথ্য খুজেন" id="shop" style="background-color:dimgray;">
+  <ion-nav-buttons side="right">
+    <button  ui-sref="shopadd()">দোকান যোগ করুন</button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model="searchText">
+      </label>
+      <button class="button button-clear">
+        Cancel
+      </button>
+    </div>
+    <div class = "card" ng-repeat=" x in getShop | filter:searchText | orderBy:index(getShop):true" >
+      <div class = "item item-avatar">
+        <img src = "img/icon.png">
+        <h2>{{x.ShopName}}</h2>
+      </div>
+      <div class = "item item-body">
+        <p style="font-size: 15px;color: #0E2240">দোকান লোকেশন: <span style="font-size:15px;color: #990000">{{x.ShopLocation}}</span></p>
+        <p style="font-size: 15px;color: #0E2240">দোকান নম্বর: <span style="font-size:15px;color: #990000">{{x.ShopNumber}}</span></p>
+        <p style="font-size: 15px;color: #0E2240">ফোন নম্বর: <span style="font-size:15px;color: #990000">{{x.phone}}</span></p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
