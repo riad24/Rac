@@ -2,13 +2,12 @@
 
 app.controller('rACCtrl', ['$scope', '$rootScope', '$ionicPlatform','$state','$window','$interval', '$stateParams','apiHandlers','$ionicPopup','$cordovaLocalNotification',
 function ($scope,$rootScope,$ionicPlatform, $state,$window,$interval, $stateParams,apiHandlers,$ionicPopup,$cordovaLocalNotification) {
-
     apiHandlers.getJob().then(function (posts) {
       $scope.lastCount = posts.data.length;
       $scope.last = $scope.lastCount;
     });
 
-  // job reload function and Notification===================================
+  // job reload function and Notification===================================>
     $scope.reload = function () {
       apiHandlers.getJob().then(function (posts) {
         $scope.lastCount = posts.data.length;
@@ -70,6 +69,9 @@ function ($scope,$rootScope,$ionicPlatform, $state,$window,$interval, $statePara
 
   apiHandlers.getHomeNews().then(function (posts) {
     localStorage.setItem('message', posts.data[0].message );
+  });
+   apiHandlers.getHomeNews().then(function (posts) {
+    localStorage.setItem('message2', posts.data[0].message );
   });
   $scope.getmessage =localStorage.getItem('message');
 
